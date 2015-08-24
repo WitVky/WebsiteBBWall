@@ -1,0 +1,264 @@
+
+@font-face {
+    font-family: 'bbwfont'; /*a name to be used later*/
+    src: url('airplanes.ttf'); /*URL to font*/
+}
+
+/** {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}*/
+
+body {
+  margin: 0;
+  background: #000; 
+  overflow:auto;
+}
+video { 
+    position: fixed;
+    opacity: .4;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+ background: url('couples.jpg') no-repeat;
+  background-size: cover;
+  -webkit-transition: 1s opacity;
+          transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .8;
+}
+#container{
+  display: block;
+
+}
+
+#polina { 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight: 100;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  border-style: groove;
+  padding: 2rem;
+  width: 30%;
+  min-height: 36%;
+  
+  position: absolute;
+  margin: 8rem 35%;
+  float: center;
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+#polina #logoimage { 
+  /*background: url('/LOGO_white.png');*/
+  content:url(LOGO_white.png);
+  /*content:url(/LOGO_white.png);*/
+  margin: -24% auto -18% ;
+  width: 100%;
+  height: auto;
+  
+  }
+  #polina label{
+    display: inline-block;
+    padding: .2rem;
+    font-family: 'bbwfont';
+    font-size: 1.3rem;
+    width: 100%;
+    margin: 20px;
+    
+    position: relative;
+    
+  }
+
+#subarea
+{
+  width: 100%;
+  height: 5em;
+  position: relative;
+  
+}
+
+
+  #polina input {
+    display: block;
+    width: 65%;
+    padding: .2rem;
+    padding-left: 1em;
+    
+    border: 2px solid;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-color: #fff;
+    margin: 0% auto;
+    float: right;
+    position: relative;
+    font-size: 1.3rem;
+    background: #fff;
+   
+    color: #00aff0;
+    font-family: 'bbwfont';
+     outline: none;
+    -webkit-transition: .3s background;
+    transition: .3s background;
+}
+
+
+
+#polina button { 
+  display: block;
+  position: absolute;
+  
+  width: 31%;
+  padding: .2rem;
+  float: left;
+
+  font-size: 1.3rem;
+  background: #fe7070;
+  color: #fff;
+  font-family: 'bbwfont';
+  
+  border:2px solid;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  
+
+  cursor: pointer;
+  -webkit-transition: .3s background;
+  transition: .3s background;
+
+  z-index: 10;
+  outline:none;
+
+}
+
+
+
+#polina button:hover { 
+   background: #DF5959;
+}
+
+#footer {
+
+  background-color: rgba(254,112,112, .9);
+  background-image:url(patt.png);
+  position: absolute;
+  padding: 1rem;
+  top : 95%;
+  width: 100%;
+  height:20%;
+  float: left;
+  z-index: 1000;
+  text-align: center;
+}
+
+
+  #footer label
+  {
+    
+    font-family: 'bbwfont';
+    color: #fff;
+    font-size: 32pt;
+    top:25%;
+    font-weight: bold;
+    position: relative;
+  }
+
+  #footer label a
+  {
+    background: none;
+    font-size: 32pt;
+    
+  }
+
+
+  #footer label a:hover
+  {
+    transform: scale(1.2,1.2);
+  }
+
+
+  #footer #social{
+
+  
+  background: #00aff0;
+  width: 100%;
+  height: auto;
+
+  margin: 0% -1rem;
+  top: 100%;
+  border-top-color: white;
+  text-align: center;
+
+  padding: 10px 0px 10px 0px;
+  border-style: solid;
+  border-width: 3px 0px 0px 0px;
+  height: 20%;
+
+  position: absolute;
+ 
+  }
+ 
+ #footer #social label{ 
+  font-family: 'bbwfont';
+  
+  color: #0C87B5;
+  font-size: 1.3rem;
+  font-weight: bold;
+  top: -25%;
+  
+
+  }
+  
+  #social a
+  {
+    background: none;
+  }
+
+  #fb, #twit, #social label
+  { 
+  
+  
+  margin: 0px 5px 0px 0px;
+  
+  }
+
+ #social a:hover
+ {
+  transform: scale(1.2,1.2);
+ }
+  
+
+
+  a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background:rgba(0,0,0,0.5);
+    padding: .5rem;
+    -webkit-transition: .6s background;
+            transition: .6s background; 
+  }
+  a:hover{
+    background:rgba(0,0,0,0.9);
+  }
+  @media screen and (max-width: 500px) { 
+    div{width:70%;} 
+  }
+  @media screen and (max-device-width: 800px) {
+    html { background: url(couples.jpg) #000 no-repeat center center fixed; }
+    #bgvid { display: none; }
+  }
+
